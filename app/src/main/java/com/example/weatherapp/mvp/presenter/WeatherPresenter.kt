@@ -1,6 +1,6 @@
 package com.example.weatherapp.mvp.presenter
 
-import com.example.weatherapp.mvp.WeatherContract
+import com.example.weatherapp.mvp.contract.WeatherContract
 import io.reactivex.rxjava3.android.schedulers.AndroidSchedulers
 import io.reactivex.rxjava3.schedulers.Schedulers
 
@@ -13,7 +13,9 @@ class WeatherPresenter(
         model.getData(CITY)
             .subscribeOn(Schedulers.io())
             .observeOn(AndroidSchedulers.mainThread())
-            .subscribe { data -> view.showData(data) }
+            .subscribe(
+                { data -> view.showData(data) },
+                { view.showError() })
     }
 
     companion object {

@@ -1,4 +1,4 @@
-package com.example.weatherapp.mvp.view
+package com.example.weatherapp.mvp.view.base
 
 import android.app.Activity
 import android.content.Context

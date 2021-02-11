@@ -4,7 +4,7 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.example.weatherapp.data.service.WeatherService
 import com.example.weatherapp.databinding.ActivityMainBinding
-import com.example.weatherapp.mvp.WeatherContract
+import com.example.weatherapp.mvp.contract.WeatherContract
 import com.example.weatherapp.mvp.model.WeatherModel
 import com.example.weatherapp.mvp.presenter.WeatherPresenter
 import com.example.weatherapp.mvp.view.WeatherView
