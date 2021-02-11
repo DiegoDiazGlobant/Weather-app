@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">WeatherApp</string>
+    <string name="data_received">Data received!</string>
+    <string name="without_internet">Connection could not be established</string>
 </resources>
